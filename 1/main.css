@@ -1,0 +1,132 @@
+.body_style{
+    background-size: 100%;
+}
+
+.display-none{
+    display: none;
+}
+.display-flex{
+    display: flex;
+}
+
+.bg_colors{
+    margin-left: 20px;
+}
+
+.bg_images{
+    margin-left: 20px;
+}
+
+.ColorBox {
+    width: 336px;
+    height: 246px;
+    flex-wrap: wrap;
+    margin: 8% auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: none;
+}
+
+.ColorBox_small {
+    width: 110px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.ColorBox_1 {
+    background-color: darkcyan;
+}
+
+.ColorBox_2 {
+    background-color: darkred;
+}
+
+.ColorBox_3 {
+    background-color: skyblue;
+}
+
+.ColorBox_4 {
+    background-color: lawngreen;
+}
+
+.ColorBox_5 {
+    background-color: gray;
+}
+.ColorBox_6 {
+    background-color: red;
+}
+
+.ColorBox_7 {
+    background-color: blue;
+}
+
+.ColorBox_8 {
+    background-color: darkmagenta;
+}
+
+.ColorBox_9 {
+    background-color: darkgoldenrod;
+}
+
+.ImageBox {
+    width: 336px;
+    height: 246px;
+    flex-wrap: wrap;
+    margin: 8% auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.ImageBox_small {
+    width: 110px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.ImageBox_1{
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ImageBox_2{
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ImageBox_3{
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ImageBox_4{
+    background-image: url(images/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ImageBox_5{
+    background-image: url(images/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ImageBox_6{
+    background-image: url(images/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ImageBox_7{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/7.jpeg);
+}
+.ImageBox_8{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/8.jpg);
+}
+.ImageBox_9{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/9.jpg);
+}
