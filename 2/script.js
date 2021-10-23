@@ -6,23 +6,29 @@ const sel = selector => document.querySelector(selector);
 
 window.addEventListener('keydown', function (event) {
     console.log('Key: ', event.key);
-    // console.log('keyCode: ', event.keyCode);
+    console.log('keyCode: ', event.keyCode);
 
-    console.log('this Key ', sel('.key').textContent);
-    // if (sel('.key').textContent == event.key) { console.log('this Key: ', event.key); }
-    if (event.keyCode == 192) {
-        sel('.key').classList.add('key_on');
-        sel('.key').classList.remove('key_off');
+    let mykey = document.getElementsByClassName('key');
+    for (let i = 0; i < mykey.length; i++) {
+        // console.log(mykey[i]);
+        if (mykey[i].textContent == event.key) {
+            //mykey[i].textContent.toLowerCase == event.key.toLowerCase - Чи так якось робити при Капслоці, щоб працювалу?
+            console.log('mykey[i].textContent ', mykey[i].textContent);
+            console.log('DOWN this Key: ', event.key);
+            mykey[i].classList.add('key_on');
+            mykey[i].classList.remove('key_off');
+        }
     }
-
 })
 
 window.addEventListener('keyup', function (event) {
-    // console.log('Key: ', event.key);
-    // console.log('keyCode: ', event.keyCode);
-
-    if (event.keyCode == 192) {
-        sel('.mykey').classList.remove('key_on');
-        sel('.mykey').classList.add('key_off');
+    let mykey = document.getElementsByClassName('key');
+    for (let i = 0; i < mykey.length; i++) {
+        // console.log(mykey[i]);
+        if (mykey[i].textContent == event.key) {
+            console.log('UP this Key: ', event.key);
+            mykey[i].classList.add('key_off');
+            mykey[i].classList.remove('key_on');
+        }
     }
 })
